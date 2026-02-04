@@ -3,19 +3,19 @@ package com.pky.cabbookingsystem.model;
 public class Rider {
     private final String id;
     private final String name;
-    private Location currentLocation;
+    private Location riderLocation;
 
     public Rider(String id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Location getCurrentLocation() {
-        return currentLocation;
+    public Location getRiderLocation() {
+        return riderLocation;
     }
 
-    public void setCurrentLocation(Location currentLocation) {
-        this.currentLocation = currentLocation;
+    public void setRiderLocation(Location riderLocation) {
+        this.riderLocation = riderLocation;
     }
 
     public String getId() {
