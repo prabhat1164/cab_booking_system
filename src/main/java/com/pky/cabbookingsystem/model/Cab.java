@@ -7,7 +7,7 @@ public class Cab {
     private boolean isAvailable;
     private final VehicleType vehicleType;
 
-    public Cab(String id, String driverName, VehicleType vehicleType, Location cabLocation, boolean isAvailable) {
+    public Cab(String id, String driverName, VehicleType vehicleType, Location cabLocation) {
         this.id = id;
         this.driverName = driverName;
         this.vehicleType = vehicleType;
