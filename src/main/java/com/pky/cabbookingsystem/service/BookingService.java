@@ -49,7 +49,6 @@ public class BookingService {
     public void endRide(Booking booking){
         booking.setStatus(BookingStatus.ENDED);
         booking.setRideEndTime(LocalDateTime.now());
-        System.out.println("Ride Ended");
 
         double finalFare = pricingStrategy.calculateFare(booking.getPickup(), booking.getDrop(), booking.getCab().getVehicleType());
         booking.setRideFare(finalFare);

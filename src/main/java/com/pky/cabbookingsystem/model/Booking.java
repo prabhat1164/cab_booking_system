@@ -83,7 +83,7 @@ public class Booking {
         System.out.println("Rider: "+ rider.getName());
         System.out.println("Driver: "+ cab.getDriverName());
         System.out.println("Pickup :"+ pickup + " Drop :"+ drop);
-        System.out.println("Vehicle Type :"+ cab.getVehicleType());
+        System.out.println("Vehicle :"+ cab.getVehicleType());
         System.out.println("Fare: "+ rideFare);
         System.out.println("Time: "+ bookingTime);
     }
