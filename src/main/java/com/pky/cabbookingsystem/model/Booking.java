@@ -13,13 +13,17 @@ public class Booking {
     private double rideFare;
     private BookingStatus status;
 
-    public Booking(Rider rider, Cab cab, Location pickup, Location drop, double rideFare, LocalDateTime bookingTime) {
+    public Booking(Rider rider, Cab cab, Location pickup, Location drop, double rideFare) {
         this.rider = rider;
         this.cab = cab;
         this.pickup = pickup;
         this.drop = drop;
         this.rideFare = rideFare;
-        this.bookingTime = bookingTime;
+        this.bookingTime = LocalDateTime.now();
+    }
+
+    public Cab getCab() {
+        return cab;
     }
 
     public Location getDrop() {

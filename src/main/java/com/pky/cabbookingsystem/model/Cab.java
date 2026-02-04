@@ -42,4 +42,8 @@ public class Cab {
     public String getDriverName() {
         return driverName;
     }
+
+    public void assignToRide() {
+        isAvailable=false;
+    }
 }
