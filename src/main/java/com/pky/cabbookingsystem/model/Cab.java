@@ -15,6 +15,10 @@ public class Cab {
         this.isAvailable = true;
     }
 
+    public VehicleType getVehicleType() {
+        return vehicleType;
+    }
+
     public Location getCabLocation() {
         return cabLocation;
     }
